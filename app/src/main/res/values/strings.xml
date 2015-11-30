@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Subliminals Central</string>
+    <string name="title_activity_main">Subliminals Central</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+<string name="preference_file_key">com.subliminals_central.subliminalscentral.PREFERENCE_FILE_KEY</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="LogInSignUp">Log In or Sign Up</string>
+    <string name="title_activity_user_auth">UserAuthActivity</string>
+</resources>

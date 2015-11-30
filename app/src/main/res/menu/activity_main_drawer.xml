@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/log_in"
+            android:title="Log In Now"/>
+        <item android:id="@+id/email_menu_item"
+            android:title="login@email.com"/>
+        <item android:id="@+id/points_menu_item" android:icon="@android:drawable/ic_menu_gallery"
+            android:title="0 points"/>
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item android:id="@+id/nav_share" android:icon="@android:drawable/ic_menu_share"
+                android:title="Forum" />
+            <item android:id="@+id/nav_send" android:icon="@android:drawable/ic_menu_send"
+                android:title="Website" />
+            <item android:id="@+id/nav_shop" android:icon="@android:drawable/ic_menu_today"
+                android:title="Shop" />
+        </menu>
+    </item>
+
+</menu>
