@@ -12,16 +12,16 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import com.subliminals_central.subliminalscentral.subliminalscentral.R;
+import com.subliminals_central.subliminalscentral.subliminalscentral.StaticUrls;
 
 public class ShopFragment extends Fragment {
 
-private static WebView myWebView;
     private static int LAYOUT = R.layout.fragment_shop;
     private View view;
 
     public void SetMeLater(){
-            String uri = "https://sellfy.com/SubliminalsCentral";
-            myWebView = (WebView) view.findViewById(R.id.webView);
+            String uri = StaticUrls.SHOP_URL;
+            WebView myWebView = (WebView) view.findViewById(R.id.webView);
             WebSettings webSettings = myWebView.getSettings();
             myWebView.setWebViewClient(new WebViewClient());
             webSettings.setJavaScriptEnabled(true);
@@ -45,7 +45,6 @@ private static WebView myWebView;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(LAYOUT, container, false);
-     //   SetMeLater();
         return view;
     }
 

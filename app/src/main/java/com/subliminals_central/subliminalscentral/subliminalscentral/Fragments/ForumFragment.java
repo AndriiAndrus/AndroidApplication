@@ -16,6 +16,7 @@ import android.webkit.WebViewClient;
 import android.widget.Toast;
 
 import com.subliminals_central.subliminalscentral.subliminalscentral.R;
+import com.subliminals_central.subliminalscentral.subliminalscentral.StaticUrls;
 
 public class ForumFragment extends Fragment {
 
@@ -23,7 +24,7 @@ public class ForumFragment extends Fragment {
     private View view;
 
     public void SetMeLater(){
-            String uri = "http://subliminalscentral.freeforums.net/";
+            String uri = StaticUrls.FORUM_URL;
             WebView myWebView = (WebView) view.findViewById(R.id.webView);
             WebSettings webSettings = myWebView.getSettings();
             myWebView.setWebViewClient(new WebViewClient());
@@ -48,7 +49,6 @@ public class ForumFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(LAYOUT, container, false);
-      //  SetMeLater();
         return view;
     }
 }

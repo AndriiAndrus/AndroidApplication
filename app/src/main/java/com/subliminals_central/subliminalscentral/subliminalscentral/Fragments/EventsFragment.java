@@ -55,18 +55,6 @@ public class EventsFragment extends Fragment {
         listView.setAdapter(search);
     }
 
-    private boolean checkInternet(){
-        ConnectivityManager conMgr = (ConnectivityManager) getContext().getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo i = conMgr.getActiveNetworkInfo();
-        if (i == null)
-            return false;
-        if (!i.isConnected())
-            return false;
-        if (!i.isAvailable())
-            return false;
-        return true;
-    }
-
     @Override
     public void onStart() {
         super.onStart();
@@ -84,7 +72,6 @@ public class EventsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(LAYOUT, container, false);
-      //  SetMeLater();
         return view;
     }
 }

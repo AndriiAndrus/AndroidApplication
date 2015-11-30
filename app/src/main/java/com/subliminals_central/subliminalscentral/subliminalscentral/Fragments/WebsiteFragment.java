@@ -11,6 +11,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import com.subliminals_central.subliminalscentral.subliminalscentral.R;
+import com.subliminals_central.subliminalscentral.subliminalscentral.StaticUrls;
 
 public class WebsiteFragment extends Fragment {
 
@@ -18,7 +19,7 @@ public class WebsiteFragment extends Fragment {
     private View view;
 
     public void SetMeLater(){
-            String uri = "http://awebsiteonline.wix.com/subliminals-central";
+            String uri = StaticUrls.WEBSITE_URL;
         WebView myWebView = (WebView) view.findViewById(R.id.webView);
             WebSettings webSettings = myWebView.getSettings();
             myWebView.setWebViewClient(new WebViewClient());
@@ -43,7 +44,6 @@ public class WebsiteFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(LAYOUT, container, false);
-       // SetMeLater();
         return view;
     }
 }

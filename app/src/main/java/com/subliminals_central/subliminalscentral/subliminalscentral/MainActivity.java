@@ -45,17 +45,6 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-       /* FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                createTabLayout();
-                Snackbar.make(view, "Count: ", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-        */
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -121,7 +110,7 @@ if(!prefs.getString("email", "").equalsIgnoreCase(""))
                 editor.putString("email", usrEmail);
                 editor.putString("pass", usrPass);
                 editor.putInt("points", scores);
-                editor.commit();
+                editor.apply();
 
                 UserData.setUserEmail(usrEmail);
                 UserData.setUserPasswd(usrPass);
